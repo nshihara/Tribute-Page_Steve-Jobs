@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <style>
+          
+        body {
+            background-color: black;
+            overflow-x: hidden;
+            
+        }
+        #main{
+            margin: 0 20% 20% 20%;
+        }
+ 
+        #title {
+            color: white;
+            text-align: center;
+            text-shadow: 5px 5px 10px white;
+            font-size: 7vh;
+        }
+ 
+        img {
+            display: inline-block;
+            width: 60%;
+            margin-left: 200px;
+        }
+ 
+        #caption {
+            font-style: italic;
+            font-size: 17px;
+            font-family: Gill Sans;
+            color: rgb(246, 243, 243);
+        }
+ 
+        div#tributData {
+            color: rgba(165, 166, 166, 0.981);
+            background-color: rgba(87, 85, 85, 0.396);
+            box-shadow: 20px 20px 20px #f0f2f046;
+            font-family: Georgia;
+            padding: 25px 25px;
+            margin: 11px;
+            margin-top: 50px;
+            border-radius: 15px;
+        }
+ 
+        h1.titleA{
+            font-family: "Centaur";
+            font-size: 35px;
+            color: rgb(148, 145, 145);
+            text-align: center;
+            text-shadow: 5px 5px 10px black;
+        }
+        #title{
+            font-size: 100px;
+        }
+        h2{
+            text-align: center;
+            color: white;
+        }
+        #link{
+            color: rgb(61, 59, 59);
+            background-color: rgba(240, 248, 255, 0.638);
+            border-radius: 10px;
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 25px;
+        }
+        .cite{
+            font-style: italic;
+            color: darkgrey;
+            text-align: center;
+            border: 1px solid darkgray;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.463);
+            display: none;
+        }
+        #cite{
+            font-size: 30px;
+        }
+        .para{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+  
+        table{
+            color: black;
+            width: 60%;
+            margin-left: 20%;
+            text-align: justify;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           
+        }
+        tr,td{
+            border: 1px solid rgb(126, 125, 123);
+            border-radius: 10px;
+        }
+        td{
+            padding: 10px;
+            
+        }
+        .c1{
+            color: rgba(226, 226, 224, 0.433);
+        }
+        .c2{
+            background-color: rgba(228, 232, 236, 0.456);
+        }
+        #timeline{
+            text-align: center;
+            font-family: "Lucida Calligraphy";
+        }
+        footer{
+            background-color: #7c7c7a86;
+            text-align: center;
+            color: darkgrey;
+        }
+        #footer{
+            font-family: Blackadder ITC;
+            font-size: 20px;
+        }
+        hr{
+            margin-top: 40px;
+            width: 80%;
+            height: 5px;
+            border: none;
+            background-color: rgba(238, 242, 242, 0.536);
+        }
+        .fimg{
+            display: none;
+        }
+        #list{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: none;
+            border-radius: 10px;
+            width: 50%;
+            padding: 15px;
+            background-color: rgba(138, 135, 135, 0.453);
+            margin-left: 25%;
+        }
+        #steveD{
+            width: 300px;
+        }
+        #picB{
+            width: 100px;
+            border-radius: 50px;
+            font-style: italic;
+            padding: 20px;
+        }
+        #pick{
+            color: #fff;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+        .btn1 {
+                margin-left: 15px;
+                width: 200px;
+                border-color: #fff;
+                border-width: 1px;
+                padding: 12px 40px;
+                border-radius: 10px;
+                font-size: 18px;
+                color: #fff;
+                cursor: pointer;
+                outline: 0;
+                background-image: linear-gradient(-180deg, #384249 0%, #444d54 100%);
+                box-shadow:  0 -0.25rem 1.5rem rgb(74, 79, 85) inset, 0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 rgb(122, 127, 225) inset;
+        }
+        .btn2{
+                margin-left: 15px;
+                margin-bottom: 100px;
+                width: 200px;
+                border-color: #fff;
+                border-width: 1px;
+                padding: 12px 40px;
+                border-radius:10px;
+                font-size: 18px;
+                color: #fff;
+                cursor: pointer;
+                outline: 0;
+                background-image: linear-gradient(-180deg, #574647 0%, #6e5c61 100%);
+                box-shadow: 0 -0.25rem 1.5rem rgb(106, 95, 93) inset, 0 0.75rem 0.5rem rgba(247, 224, 226, 0.4) inset, 0 0.25rem 0.5rem 0 rgb(192, 84, 100) inset;
+        }
+        #apple {
+                position: relative;
+                cursor: pointer;
+                /* top: 155px; */
+                width: 400px;
+                height: 650px;
+        }
+        #blink{
+            font-size: 80px;
+            color: whitesmoke;
+            font-family: "Mistral";
+            
+        }
+        #blinkT{
+                display: flex;
+                align-items: center;
+                margin-left: 3%;
+        }
+          
+
+    </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+ 
+<body>
+    
+    <main id="main">
+ 
+        <!-- Title of the page -->
+        <h1 id="title">
+            Steve Jobs
+        </h1>
+       <br>
+ 
+        <div id="img">
+            <div id="fadeimg" class="fimg">
+                <img src="ab.jpg" id="image"
+                alt="Error Loading Image">
+            </div>
+            <div id="fadeI"></div>
+            <!--Image of the Tribute Person-->
+           
+            <br><br><br>
+            <small id="caption">
+               <center>Steven Paul "Steve" Jobs was an American information technology entrepreneur and inventor. 
+                As co-founder and CEO of Apple Computers, Steve brought us the first personal 
+                computer, the ipod and the iphone.</center> 
+            </small>
+        </div>
+        <h2>( 1955 to 2011 )</h2>
+
+        <br><br><br>
+       
+ 
+        <div id="tributData">
+ 
+            <!--Achievements and other
+                details of the person-->
+            <h1 class="titleA">
+                About the Legend
+            </h1><br>
+
+            <div id="list">
+                <ul>
+                    <li>Born</li>
+                    <ul>
+                        <li>Steven Paul Jobs</li>
+                        <li>February 24, 1955</li>
+                        <li>San Francisco, California, U.S.</li>
+                    </ul>
+                    <li>Parents</li>
+                    <ul>
+                        <li>Paul Jobs (adoptive father)</li>
+                        <li>Clara Jobs (adoptive mother)</li>
+                        <li>Abdulfattah Jandali (biological father)</li>
+                        <li>Joanne Schieble Simpson (biological mother)</li>
+                    </ul>
+                    <li>Children</li>
+                    <ul>
+                        <li>with Brennan;
+                            Lisa Brennan (b. 1978)</li>
+                         <li>with Powell;
+                            Reed Jobs (b. 1991)
+                            Erin Jobs (b. 1995)
+                            Eve Jobs (b. 1998)</li>
+                    </ul>
+                    <li>Cause of
+                        death</li>
+                        <ul>
+                            <li>Pancreatic cancer and
+                                respiratory arrest</li>
+                        </ul>
+                </ul>
+            </div> 
+            <br><br>
+             
+ 
+            <p style="font-weight: bold;" class="para"> Steve Jobs was one of the most influential
+                entrepreneurs in the field of IT,</p><br>
+            <p class="para">He was the founder and CEO of Apple Inc. - one of the biggest IT 
+                companies in the world. His ideas and passion for innovative inventions
+                is celebrated by the mordern IT community. His vision and drive have 
+                forever changed computing by bringing us the Mac, the iPhone and the 
+                iPad. He achieved a lot at a very young age and inspired an entire 
+                generation of young entrepreneurs. He is respected worldwide as a role
+                model and icon for success. His life is an ispiration for anyone who
+                has a passion for IT innovation or entrepreneurship.</p>
+                <br>
+            
+            <p style="font-weight: bold;" class="para">His legacy,</p>
+            <p class="para">Today Apple computers, peripherals, mobile phones and other IT products
+                 are sold, used and loved by users globally. There have been numerous 
+                 books written and motion picures produced about the life of Steve Jobs. 
+                 His quotes are highly motivating and have been used on and off for 
+                 various purposes by different individuals and business entities worldwide. 
+                 The enormous contribution made by him to the IT community and the world 
+                 shall always be remembered.</p><br><br><br>
+
+                 <div id="table">
+                    <h4 id="timeline">Timeline</h4>
+                    <table>
+                        <tr>
+                            <td class="c1">Feb 1955</td>
+                            <td class="c2">Steve was born in San Francisco, the son of Abdulfattah Jandali 
+                                and Joanne Schieble. He is quickly adopted by Paul and Clara Jobs</td>
+                        </tr>
+                        <tr>
+                            <td class="c1">1960</td>
+                            <td class="c2">The Jobs family moves from San Francisco to Mountain View, a 
+                                suburban town in Santa Clara county, more commonly known as 
+                                Silicon Valley</td>
+                        </tr>
+                        <tr>
+                            <td class="c1">1969</td>
+                            <td class="c2">Steve Jobs meets Steve Wozniak, 5 years older, through 
+                                a mutual friend. Woz and Steve share a love of electronics, 
+                                Bob Dylan, and pranks</td>
+                        </tr>
+                        <tr>
+                            <td class="c1">1972</td>
+                            <td class="c2">Steve and Woz build and illegally sell 'blue boxes' 
+                                that allow to make phone calls for free</td>
+                        </tr>
+                        <tr>
+                            <td class="c1">Aug 2011</td>
+                            <td class="c2">Steve Jobs resigns as CEO of Apple, with the words 
+                                'I have always said if there ever came a day when I could no 
+                                longer meet my duties and expectations as Apple's CEO, I would 
+                                be the first to let you know. Unfortunately, that day has come.' 
+                                Tim Cook becomes Apple CEO</td>
+                        </tr>
+                        <tr>
+                            <td class="c1">Oct 2011</td>
+                            <td class="c2">Steve Jobs dies at home, surrounded by his family</td>
+                        </tr>
+                    </table>
+                </div>    <br><br><br>
+         
+ 
+ 
+        </div>
+        <br><br><br><br>
+        
+        <div id="fadeIn" class="cite">
+            <p id="cite">"Your time is limited, so don't waste it living someone else's life."</p>
+            <span style="font-size: 20px;"> - Steve Jobs </span>
+        </div>
+        <div id="fade"></div>
+       <br><br><br><br><br><br><hr>
+
+       <p id="pick">Pick a section and dive into the content!</p><br><br>
+       <button class="btn1" id="bio">BIO</button>
+       <button class="btn2" id="feed">FEED</button>
+       <button class="btn1" id="per">PERSONA</button>
+       <button class="btn2" id="ver">VERBATIM</button>
+       <br><br><br><br><br>
+        
+
+        <div id="link">
+            <p>Steve Jobs was diagnosed with a pancreatic neuroendocrine tumor in 2003.
+             He died at age 56 on October 5, 2011, of respiratory arrest related to the tumor. <br>
+              Find out more about Steve Jobs <span><a href="https://en.wikipedia.org/wiki/Steve_Jobs">on wikipedia.</a></span> </p>
+        </div><br>       
+    
+    
+    </main>
+    <div id="blinkT">
+        <img id="apple" src="HD.jpg">
+        <span id="blink">
+            Steve Jobs...
+        </span>
+    </div>
+    <footer>
+        <p>&copy;2022. 
+        <span id="footer">Steve Jobs</span> </p>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+			
+			$('#fadeimg').fadeIn(5000, function () {
+					$('#fadeI').append('fadeIn() completed.')
+				});
+
+        });
+
+        $(document).ready(function () {
+			
+			$('#fadeIn').fadeIn(5000, function () {
+					$('#fade').append('fadeIn() completed.')
+				});
+
+        });
+        
+        document.getElementById("bio").onclick = function () {
+            location.href = "https://allaboutstevejobs.com/bio/short_bio";
+        };
+        document.getElementById("feed").onclick = function () {
+            location.href = "https://allaboutstevejobs.com/blog/";
+        };
+        document.getElementById("per").onclick = function () {
+            location.href = "https://allaboutstevejobs.com/persona/steve_at_work";
+        };
+        document.getElementById("ver").onclick = function () {
+            location.href = "https://allaboutstevejobs.com/verbatim/quotes";
+        };
+
+        apple.onclick=function(){
+        let start=Date.now(); //remember start time
+        let timer=setInterval(function(){
+            let timePassed=Date.now()-start;
+            apple.style.left=timePassed/7+'px';
+        if(timePassed>5000)clearInterval(timer);        
+        },20);
+        }
+
+        var blink = document.getElementById('blink');
+        setInterval(function () {
+            blink.style.opacity = 
+            (blink.style.opacity == 0 ? 1 : 0);
+        }, 1000); 
+    </script>
+</body>
+ 
+</html>
